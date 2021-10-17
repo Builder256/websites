@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="比鹿製作所 RealTrainMod(RTM)向けの作品を公開しています">
         <title>比鹿製作所-トップページ</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     </head>
     <body>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <img src="higa.png" class="navbar-item" width="170" height="28">
+                <img src="higa.png" alt="logo" class="navbar-item" width="170" height="28">
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -25,7 +26,7 @@
               </div>
             </div>
         </nav>
-        
+
         <section class="hero is-medium" style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('hero.jfif') center left">
             <div class="hero-body has-text-centered">
                 <p class="title has-text-white">比鹿製作所</p>
@@ -41,7 +42,7 @@
                         <p class="is-size-2">DT71台車</p>
                         <li>JR東日本のE233系，E531系などに採用されている台車です</li>
                         <li>描画スクリプトを搭載し、車輪が回転します</li>
-                        <img src="https://media.discordapp.net/attachments/520919599307554816/878865043754737705/DT71.jpg">
+                        <img src="DT71.jpg">
                         <div class="field is-grouped is-grouped-right">
                             <a href="https://ux.getuploader.com/Builder_256/download/17" class="button is-link is-large" target="_blank" rel="noopener noreferrer">ダウンロード</a>
                         </div>
@@ -55,7 +56,7 @@
                         <li>東京メトロ／帝都高速度交通営団の03系，05系，06系，07系に採用されている台車です</li>
                         <li>描画スクリプトを搭載し、車輪が回転します</li>
                         <li>他のモノリンク式ボルスタレス台車の代用品として使えるかもしれません</li>
-                        <img src="https://media.discordapp.net/attachments/520919599307554816/878866297407025232/SS135.png">
+                        <img src="SS135.png">
                         <div class="field is-grouped is-grouped-right">
                             <a href="https://ux.getuploader.com/Builder_256/download/19" class="button is-link is-large" target="_blank" rel="noopener noreferrer">ダウンロード</a>
                         </div>
@@ -67,32 +68,6 @@
             <p class="has-text-centered has-text-white">Copyright 2021 Builder
             </p>
         </footer>
-        <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-  
-      // Add a click event on each of them
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-  
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-  
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-  
-        });
-      });
-    }
-  
-  });
-        </script>
+        <script src="navbar.js"></script>
     </body>
 </html>
