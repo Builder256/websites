@@ -1,0 +1,9 @@
+.builderblock {
+    padding: 0rem 10rem;
+}
+
+@media screen and (max-width:1024px) {
+    .builderblock {
+        padding: 0rem 0rem;
+    }
+}
