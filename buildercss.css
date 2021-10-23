@@ -2,8 +2,14 @@
     padding: 0rem 15rem;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .builderblock {
         padding: 0rem 0rem;
+    }
+}
+
+@media screen and (max-wigth:1024px) {
+    .builderblock {
+        padding: 0rem 5rem;
     }
 }
