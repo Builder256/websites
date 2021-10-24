@@ -2,15 +2,9 @@
     padding: 0rem 15rem;
 }
 
-@media screen and (max-width:768px) {
-    .builderblock {
-        padding: 0rem 0rem;
-    }
-}
-
 @media screen and (max-width:1023px) {
     .builderblock {
-        padding: 0rem 5rem;
+        padding: 0rem 0rem;
     }
 }
 
