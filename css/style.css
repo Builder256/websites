@@ -22,3 +22,7 @@ span.allow-bottom-with-text::after {
   border-right: 2px solid #ff0000;
   transform: rotate(45deg);
 }
+
+.heading {
+    border-left: 5px solid #ff0000;
+}
