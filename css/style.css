@@ -2,10 +2,12 @@ body {
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-.Arrow-Bottom {
-border-bottom: solid 4px #cc0000;
-border-right: solid 4px #cc0000;
-width: 24px;
-height: 24px;
-transform: rotate(45deg);
+.arrow-bottom {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  transform: rotate(45deg);
 }
