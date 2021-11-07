@@ -12,7 +12,7 @@ body {
   transform: rotate(45deg);
 }
 
-span::after {
+span.allow-bottom-with-text::after {
   content: "";
   display: inline-block;
   width: 10px;
