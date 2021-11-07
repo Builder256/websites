@@ -21,4 +21,7 @@ span::before {
   border: 5px solid transparent;
   border-right: 0 solid transparent;
   border-left: 8px solid #000;
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+  transform: rotate(45deg);
 }
