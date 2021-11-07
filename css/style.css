@@ -12,13 +12,13 @@ body {
   transform: rotate(45deg);
 }
 
-span::before {
+span::after {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
   margin: 0 10px;
-  border-bottom: 4px solid #000;
-  border-right: 4px solid #000;
+  border-bottom: 4px solid #ff0000;
+  border-right: 4px solid #ff0000;
   transform: rotate(45deg);
 }
