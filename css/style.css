@@ -11,3 +11,14 @@ body {
   border-right: 4px solid #000;
   transform: rotate(45deg);
 }
+
+span::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 0.5em 0 0;
+  border: 5px solid transparent;
+  border-right: 0 solid transparent;
+  border-left: 8px solid #000;
+}
