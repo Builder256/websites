@@ -1,0 +1,192 @@
+body {
+    background: #222;
+    margin: 0;
+    color: #fff;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+header {
+    background: #333;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.higa-logo {
+    height: 60px;
+    padding: 10px;
+}
+
+#navMenu-burger {
+    font-size: 5rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-item {
+    padding: 0 10px;
+    line-height: 80px;
+}
+
+.navbar-item:hover {
+	background: #444;
+}
+
+.header-space {
+	height: 80px;
+}
+
+.hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../images/eye-catch.png') center left;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hero-products {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../images/truckpack.png');
+	background-size: cover;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	font-size: 2rem;
+	margin: 0;
+}
+
+section {
+	padding: 1rem;
+}
+
+article {
+	background: #333;
+
+	padding: 0.5rem;
+	border-radius: 5px;
+	width: 40vw;
+}
+
+.title-center {
+	text-align: center;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.title-left {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.articles {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+footer {
+	background: #333;
+	text-align: center;
+	padding: 2rem;
+}
+
+.button {
+	padding: 0.5rem;
+	border: solid 1px #fff;
+	border-radius: 3px;
+	margin: 1rem 0;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+span {
+	vertical-align: bottom;
+}
+
+.section-title {
+	border-left: solid 5px #c00;
+	margin: 1rem 0;
+}
+
+.content {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.twitter-container {
+	width: 50%;
+}
+
+
+@media(max-width: 650px){
+.navbar {
+	display: none;
+}
+
+#navMenu-burger {
+	display: block;
+}
+
+.active {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 80px;
+	background: #333;
+	width: 100%;
+}
+
+.navbar-item {
+	border-top: 1px solid #aaa;
+	line-height: 60px;
+}
+
+article {
+	width: auto;
+}
+
+.articles {
+	flex-direction: column;
+}
+
+.content {
+	width: 100%;
+}
+}
