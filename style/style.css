@@ -62,7 +62,6 @@ nav {
 
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../images/eye-catch.png') center left;
-	width: 100%;
 	height: 50vh;
 	display: flex;
 	justify-content: center;
