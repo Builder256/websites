@@ -1,1 +1,47 @@
-javascript:(function(){var video=document.querySelector('video');if(video){if(video.requestFullscreen){video.requestFullscreen();}else if(video.mozRequestFullScreen){video.mozRequestFullScreen();}else if(video.webkitRequestFullscreen){video.webkitRequestFullscreen();}else if(video.msRequestFullscreen){video.msRequestFullscreen();}}else{alert('ビデオ要素が見つかりませんでした。');}})();
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フルスクリーンビデオブックマークレット</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .bookmarklet {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .bookmarklet:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>フルスクリーンビデオブックマークレット</h1>
+    <p>このブックマークレットを使用すると、ビデオ要素を含むウェブページで簡単にフルスクリーン表示にすることができます。</p>
+    <p>以下のボタンをブックマークバーにドラッグ＆ドロップしてください:</p>
+    <a class="bookmarklet" href="javascript:(function(){var video=document.querySelector('video');if(video){if(video.requestFullscreen){video.requestFullscreen();}else if(video.mozRequestFullScreen){video.mozRequestFullScreen();}else if(video.webkitRequestFullscreen){video.webkitRequestFullscreen();}else if(video.msRequestFullscreen){video.msRequestFullscreen();}}else{alert('ビデオ要素が見つかりませんでした。');}})();">フルスクリーンビデオ</a>
+    <p>ブックマークレットの使用方法:</p>
+    <ol>
+        <li>上記のボタンをブックマークバーにドラッグ＆ドロップします。</li>
+        <li>ビデオ要素を含むウェブページに移動します。</li>
+        <li>ブックマークバーの「フルスクリーンビデオ」ブックマークをクリックします。</li>
+    </ol>
+    <p>すると、ページ内のビデオがフルスクリーン表示されます。</p>
+</body>
+</html>
