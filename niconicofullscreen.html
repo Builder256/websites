@@ -25,9 +25,27 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            cursor: pointer;
         }
         .bookmarklet:hover {
             background-color: #0056b3;
+        }
+        .copy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .copy-button:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            position: absolute;
+            left: -9999px;
         }
     </style>
 </head>
@@ -36,12 +54,25 @@
     <p>このブックマークレットを使用すると、ビデオ要素を含むウェブページで簡単にフルスクリーン表示にすることができます。</p>
     <p>以下のボタンをブックマークバーにドラッグ＆ドロップしてください:</p>
     <a class="bookmarklet" href="javascript:(function(){var video=document.querySelector('video');if(video){if(video.requestFullscreen){video.requestFullscreen();}else if(video.mozRequestFullScreen){video.mozRequestFullScreen();}else if(video.webkitRequestFullscreen){video.webkitRequestFullscreen();}else if(video.msRequestFullscreen){video.msRequestFullscreen();}}else{alert('ビデオ要素が見つかりませんでした。');}})();">フルスクリーンビデオ</a>
+    <p>または、以下のボタンをクリックしてスクリプトをクリップボードにコピーし、手動でブックマークに追加してください（スマートフォンでも使用可能です）:</p>
+    <button class="copy-button" onclick="copyToClipboard()">スクリプトをコピー</button>
+    <textarea id="bookmarklet-code" class="hidden">javascript:(function(){var video=document.querySelector('video');if(video){if(video.requestFullscreen){video.requestFullscreen();}else if(video.mozRequestFullScreen){video.mozRequestFullScreen();}else if(video.webkitRequestFullscreen){video.webkitRequestFullscreen();}else if(video.msRequestFullscreen){video.msRequestFullscreen();}}else{alert('ビデオ要素が見つかりませんでした。');}})();</textarea>
     <p>ブックマークレットの使用方法:</p>
     <ol>
         <li>上記のボタンをブックマークバーにドラッグ＆ドロップします。</li>
         <li>ビデオ要素を含むウェブページに移動します。</li>
         <li>ブックマークバーの「フルスクリーンビデオ」ブックマークをクリックします。</li>
     </ol>
-    <p>すると、ページ内のビデオがフルスクリーン表示されます。</p>
+    <p>または、スクリプトをコピーしてスマートフォンのブラウザでブックマークに手動で追加します。</p>
+    <script>
+        function copyToClipboard() {
+            var textarea = document.getElementById("bookmarklet-code");
+            textarea.classList.remove("hidden");
+            textarea.select();
+            document.execCommand("copy");
+            textarea.classList.add("hidden");
+            alert("スクリプトがクリップボードにコピーされました！");
+        }
+    </script>
 </body>
 </html>
