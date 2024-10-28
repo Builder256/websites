@@ -70,7 +70,7 @@ nav {
 }
 
 .hero-products {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('./images/hero-products.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../images/hero-products.jpg');
 	background-size: cover;
 	height: 50vh;
 	display: flex;
